@@ -38,8 +38,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github Repo]([https://your-solution-url.com](https://github.com/Skyz03/JS--Expense-Chart-V2))
-- Live Site URL: [Live]([https://your-live-site-url.com](https://skyz03.github.io/JS--Expense-Chart-V2/))
+- Solution URL: [Github Repo](https://github.com/Skyz03/JS--Expense-Chart-V2)
+- Live Site URL: [Live](https://skyz03.github.io/JS--Expense-Chart-V2/)
 
 ## My process
 
@@ -102,6 +102,6 @@ data.then((data) => {
 
 ## Author
 
-- Frontend Mentor - [@Skyz03]([https://www.frontendmentor.io/profile/yourusername](https://github.com/Skyz03))
+- Frontend Mentor - [@Skyz03](https://github.com/Skyz03)
 
 ## Acknowledgments
