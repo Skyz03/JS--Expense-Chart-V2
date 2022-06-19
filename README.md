@@ -39,7 +39,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github Repo]([https://your-solution-url.com](https://github.com/Skyz03/JS--Expense-Chart-V2))
-- Live Site URL: [Live}([https://your-live-site-url.com](https://skyz03.github.io/JS--Expense-Chart-V2/))
+- Live Site URL: [Live]([https://your-live-site-url.com](https://skyz03.github.io/JS--Expense-Chart-V2/))
 
 ## My process
 
