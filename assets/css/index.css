@@ -40,39 +40,38 @@ body {
   padding: 2em;
   color: hsl(25deg, 47%, 15%);
 }
-
-.chart-container {
-  display: flex;
-  justify-content: space-between;
+.lower-part small {
+  font-size: 0.8em;
+  color: hsl(28deg, 10%, 53%);
 }
 
 .chart {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   height: 12em;
   gap: 0.5em;
 }
-
+.chart-container {
+  display: flex;
+  justify-content: space-between;
+}
 .chart-wrapper {
   width: 2.5em;
   display: flex;
   align-items: flex-end;
   height: 90%;
 }
-
 .chart-value {
   height: var(--height);
   background: hsl(10deg, 79%, 65%);
   width: 100%;
   border-radius: 0.25em;
 }
-
 .chart-value.active {
   background: hsl(186deg, 34%, 60%);
 }
-
 .chart-title {
   color: hsl(28deg, 10%, 53%);
   font-size: 0.8em;
@@ -95,8 +94,4 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-}
-.stats .lower-part .small {
-  font-size: 0.8em;
-  color: hsl(28deg, 10%, 53%);
 }/*# sourceMappingURL=index.css.map */

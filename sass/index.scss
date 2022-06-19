@@ -1,4 +1,4 @@
-// // Colors
+// Colors
 $clr-soft-red: hsl(10, 79%, 65%);
 $clr-active: hsl(186, 34%, 60%);
 $clr-headings: hsl(25, 47%, 15%);
@@ -25,6 +25,12 @@ body {
   min-height: 100vh;
 }
 
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -48,43 +54,48 @@ body {
   background: #fff;
   padding: 2em;
   color: $clr-headings;
+
+  small {
+    font-size: 0.8em;
+    color: $clr-small;
+  }
 }
 
-.chart-container {
-  display: flex;
-  justify-content: space-between;
-}
+// Chart section starts here
 
 .chart {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexCenter();
   flex-direction: column;
   height: 12em;
   gap: 0.5em;
-}
 
-.chart-wrapper {
-  width: 2.5em;
-  display: flex;
-  align-items: flex-end;
-  height: 90%;
-}
+  &-container {
+    display: flex;
+    justify-content: space-between;
+  }
 
-.chart-value {
-  height: var(--height);
-  background: $clr-soft-red;
-  width: 100%;
-  border-radius: 0.25em;
-}
+  &-wrapper {
+    width: 2.5em;
+    display: flex;
+    align-items: flex-end;
+    height: 90%;
+  }
 
-.chart-value.active {
-  background: $clr-active;
-}
+  &-value {
+    height: var(--height);
+    background: $clr-soft-red;
+    width: 100%;
+    border-radius: 0.25em;
+  }
 
-.chart-title {
-  color: $clr-small;
-  font-size: 0.8em;
+  &-value.active {
+    background: $clr-active;
+  }
+
+  &-title {
+    color: $clr-small;
+    font-size: 0.8em;
+  }
 }
 
 hr {
@@ -95,6 +106,7 @@ hr {
   margin: 1em 0;
 }
 
+// Stats section starts here
 .stats {
   display: flex;
   justify-content: space-between;
@@ -104,10 +116,5 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-  }
-
-  .lower-part .small {
-    font-size: 0.8em;
-    color: $clr-small;
   }
 }
