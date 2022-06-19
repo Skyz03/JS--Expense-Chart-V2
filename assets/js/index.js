@@ -2,17 +2,17 @@
 const data = fetch("data.json")
   .then((response) => response.json())
   .then((data) => {
-    console.log(data);
     return data;
   })
   .catch((error) => console.log(error));
 
-// Convert data into array
+// Select the container from the DOM
 let chartContainer = document.querySelector(".chart-container");
 
 // Map through data and populate chart
 data.then((data) => {
   data.forEach((item) => {
+    // Create a new div for each chart item
     let chart = document.createElement("div");
     chart.classList.add("chart");
     const height = item.amount / 7;
@@ -28,6 +28,8 @@ data.then((data) => {
         </div>
         <div class="chart-title">${item.day}</div>
         `;
+
+    //This is an important line as it adds the chart to the container
     chartContainer.appendChild(chart);
   });
 });
